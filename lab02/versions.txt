@@ -1,0 +1,6 @@
+git version 2.54.0 (Apple Git-157)
+Docker version 28.2.2, build e6534b4
+Docker Compose version v2.37.1-desktop.1
+aws-cli/2.37.12 Python/3.14.6 Darwin/27.0.0 script-exe/arm64
+wrangler
+4.149.0
