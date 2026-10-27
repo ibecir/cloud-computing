@@ -1,0 +1,88 @@
+The push refers to repository [ghcr.io/ibecir/lab04-app]
+ddc0c1e36a67: Waiting
+44136fa355b3: Waiting
+1fe8ddfb8cbb: Waiting
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Waiting
+44136fa355b3: Waiting
+1fe8ddfb8cbb: Waiting
+5f9f0e4518c2: Waiting
+44136fa355b3: Waiting
+1fe8ddfb8cbb: Waiting
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Waiting
+1fe8ddfb8cbb: Waiting
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Waiting
+44136fa355b3: Waiting
+1fe8ddfb8cbb: Waiting
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Waiting
+44136fa355b3: Waiting
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Waiting
+44136fa355b3: Waiting
+1fe8ddfb8cbb: Waiting
+44136fa355b3: Waiting
+1fe8ddfb8cbb: Waiting
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Waiting
+44136fa355b3: Waiting
+1fe8ddfb8cbb: Waiting
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Waiting
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Waiting
+44136fa355b3: Waiting
+1fe8ddfb8cbb: Waiting
+1fe8ddfb8cbb: Layer already exists
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Waiting
+44136fa355b3: Waiting
+ff13255a981b: Waiting
+3634f8258f7a: Waiting
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Waiting
+44136fa355b3: Waiting
+ff13255a981b: Waiting
+3634f8258f7a: Waiting
+44136fa355b3: Waiting
+ff13255a981b: Waiting
+3634f8258f7a: Waiting
+af58dc1381ca: Waiting
+5f9f0e4518c2: Waiting
+ddc0c1e36a67: Layer already exists
+ff13255a981b: Layer already exists
+3634f8258f7a: Layer already exists
+fbfc08d5473f: Waiting
+4a03fb73a15e: Waiting
+af58dc1381ca: Waiting
+5f9f0e4518c2: Already exists
+1c1e8aeaee99: Waiting
+44136fa355b3: Already exists
+1c1e8aeaee99: Waiting
+fbfc08d5473f: Waiting
+4a03fb73a15e: Waiting
+af58dc1381ca: Waiting
+4a03fb73a15e: Waiting
+af58dc1381ca: Waiting
+1c1e8aeaee99: Waiting
+fbfc08d5473f: Waiting
+fbfc08d5473f: Waiting
+4a03fb73a15e: Waiting
+af58dc1381ca: Layer already exists
+1c1e8aeaee99: Waiting
+1c1e8aeaee99: Waiting
+fbfc08d5473f: Waiting
+4a03fb73a15e: Waiting
+fbfc08d5473f: Waiting
+4a03fb73a15e: Waiting
+1c1e8aeaee99: Waiting
+1c1e8aeaee99: Waiting
+fbfc08d5473f: Layer already exists
+4a03fb73a15e: Waiting
+4a03fb73a15e: Waiting
+1c1e8aeaee99: Waiting
+4a03fb73a15e: Layer already exists
+1c1e8aeaee99: Layer already exists
+1.0: digest: sha256:0a83217b12aade8d2ecf1d755ef66956b674eb1b9b245213b3e39f6adfd389c4 size: 856
