@@ -1,0 +1,11 @@
+# Keys, passwords and local settings never go into an image
+*.pem
+*.key
+.env
+
+
+# Lab files the app does not need
+*.txt
+!requirements.txt
+*.json
+threats.csv
