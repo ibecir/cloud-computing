@@ -1,0 +1,5 @@
+entry_point,threat_agent,threat,affected,mitigation
+nginx web server on port 8080,anonymous attacker,brute force,confidentiality,implement rate limiting and strong authentication
+application containers on port 8000,malicious service agent,remote code execution,integrity,regularly update dependencies and validate user input
+PostgreSQL database on port 5432,trusted attacker,insufficient authorization,confidentiality,use least privilege database permissions
+developer credentials and access tokens,malicious insider,phishing,authenticity,enable multi factor authentication and secure token storage
