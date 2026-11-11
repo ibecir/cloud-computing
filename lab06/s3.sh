@@ -21,3 +21,4 @@ echo "second version" | aws s3 cp - "s3://$BUCKET/notes.txt"
 aws s3api list-object-versions --bucket "$BUCKET" --query "Versions[].[Key,IsLatest]" --output text
 
 # Part 3: print a presigned URL (this must be the last thing the script prints)
+aws s3 presign "s3://$BUCKET/index.html" --expires-in 600
