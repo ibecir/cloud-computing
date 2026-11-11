@@ -14,6 +14,10 @@ aws s3api create-bucket --bucket "$BUCKET"
 aws s3api put-bucket-versioning --bucket "$BUCKET" --versioning-configuration Status=Enabled
 
 # Part 2: upload three objects, and a second version of one of them
-
+echo "<h1>Hello from $BUCKET</h1>" | aws s3 cp - "s3://$BUCKET/index.html" --content-type text/html
+echo "id,name" | aws s3 cp - "s3://$BUCKET/data.csv"
+echo "first version" | aws s3 cp - "s3://$BUCKET/notes.txt"
+echo "second version" | aws s3 cp - "s3://$BUCKET/notes.txt"
+aws s3api list-object-versions --bucket "$BUCKET" --query "Versions[].[Key,IsLatest]" --output text
 
 # Part 3: print a presigned URL (this must be the last thing the script prints)
