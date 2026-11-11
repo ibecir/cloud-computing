@@ -1,0 +1,47 @@
+# IT 3007 Lab 6: runs lab06/s3.sh against Floci on every push that changes lab06/.
+name: Lab 6 S3 check
+
+on:
+  push:
+    paths:
+      - "lab06/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  s3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    services:
+      floci:
+        image: floci/floci:latest
+        ports:
+          - 4566:4566
+    env:
+      AWS_ENDPOINT_URL: http://localhost:4566
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+      AWS_DEFAULT_REGION: us-east-1
+      AWS_PAGER: ""
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Wait for Floci
+        shell: bash
+        run: |
+          for i in $(seq 1 30); do aws s3 ls > /dev/null 2>&1 && exit 0; sleep 1; done
+          echo "Floci did not start"; exit 1
+
+      - name: Run lab06/s3.sh
+        shell: bash
+        run: bash lab06/s3.sh | tee script-output.txt
+
+      - name: Check the results
+        if: always()
+        shell: bash
+        run: |
+          # Repos are named <student id>-<name>-<initial>-2026, so the username comes from the pusher, not the repo name
+          user="${{ github.actor }}"
+          bash .github/lab06-check.sh "$user" script-output.txt
