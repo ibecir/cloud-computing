@@ -27,3 +27,13 @@ QUEUE_URL=$(aws sqs create-queue --queue-name lab07-orders \
 
 
 # Part 2: the topic, subscribed to the main queue
+TOPIC_ARN=$(aws sns create-topic --name lab07-orders \
+  --query TopicArn --output text)
+QUEUE_ARN=$(aws sqs get-queue-attributes --queue-url "$QUEUE_URL" \
+  --attribute-names QueueArn --query Attributes.QueueArn --output text)
+aws sns subscribe --topic-arn "$TOPIC_ARN" --protocol sqs \
+  --notification-endpoint "$QUEUE_ARN" \
+  --attributes RawMessageDelivery=true > /dev/null
+
+
+echo "Pipeline ready: topic -> lab07-orders queue -> lab07-orders table"
