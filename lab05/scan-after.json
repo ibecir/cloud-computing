@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.76.1"
   },
-  "ReportID": "01a19669-69e0-7113-b0ad-5c8d78054106",
-  "CreatedAt": "2026-11-01T09:20:53.216071091Z",
+  "ReportID": "01a1966d-4d33-7ac5-ba26-9a66c5ca1376",
+  "CreatedAt": "2026-11-01T09:25:08.019706625Z",
   "ArtifactID": "sha256:99ceed825e04b7f1f959c81997138030164baafe753410fe35abc555ff3157d4",
   "ArtifactName": "lab05-app:2.0",
   "ArtifactType": "container_image",
